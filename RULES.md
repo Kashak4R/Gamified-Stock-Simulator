@@ -41,68 +41,21 @@ This is a Gamified Stock Market Simulator that allows users to practice and lear
 
 ---
 
-## Code Organization Guidelines
+## Code Documentation & Comments Rule
 
-```
-Gamified Stock simulator/
-├── frontend/
-│   ├── index.html
-│   ├── css/
-│   │   └── styles.css
-│   ├── js/
-│   │   └── app.js
-│   └── assets/
-├── backend/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/com/stocksimulator/
-│   │   │   └── resources/
-│   │   └── test/
-│   ├── pom.xml
-│   └── README.md
-├── database/
-│   ├── schema.sql
-│   ├── seed-data.sql
-│   └── migrations/
-├── RULES.md
-└── README.md
-```
+### 4. Code Documentation Standards
+- **Comprehensive Comments**: Every code file and code block must be properly documented
+- **Comment Style**: Comments should be written in simple language that even a beginner can understand
+- **Coverage Required**:
+  - Class/function descriptions explaining purpose and usage
+  - Inline comments for complex logic
+  - Parameter and return value documentation
+  - Explanations for business logic decisions
+- **Examples**: 
+  - Java: Use JavaDoc format for classes and methods
+  - JavaScript: Use clear inline comments and JSDoc for functions
+  - HTML/CSS: Document complex layouts and styling logic
+- **Goal**: Any developer, regardless of experience level, should be able to understand the codebase by reading the comments
 
----
 
-## Important Development Guidelines
 
-### Rule #5: Permission Required for Stuck Issues
-**If you encounter any blockers or get stuck anywhere:**
-- ❌ Do NOT attempt to resolve it independently
-- ✅ ALWAYS ask for user permission before:
-  - Deviating from the tech stack
-  - Introducing new tools/libraries
-  - Changing architecture decisions
-  - Modifying rules
-
-### Code Quality
-- Follow Java naming conventions (camelCase for variables/methods, PascalCase for classes)
-- Write clean, readable code with proper documentation
-- Use appropriate design patterns for trading logic
-- Ensure all database operations use proper transaction handling
-
-### Database
-- Always use parameterized queries to prevent SQL injection
-- Maintain data integrity with proper constraints
-- Create backups of schema and migration scripts
-
-### Frontend
-- Keep HTML semantic and accessible
-- Use vanilla JavaScript or a lightweight framework
-- Ensure responsive design for multiple devices
-- Separate concerns: HTML structure, CSS styling, JS logic
-
----
-
-## Violation Policy
-Any deviation from this ruleset without explicit user permission is prohibited. If unclear about implementation approach, always ask for clarification.
-
----
-
-**Last Updated**: March 6, 2026
